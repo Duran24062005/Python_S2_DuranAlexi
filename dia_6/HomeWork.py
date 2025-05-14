@@ -182,3 +182,4 @@ n = int(input('Escribe un numero: '))
     
     
 #Desarrollado por Alexi Durán Gómez : C.C-1.067.031.983
+# Siguentes puntos
