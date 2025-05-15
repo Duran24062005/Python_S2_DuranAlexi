@@ -61,6 +61,7 @@ def listar_user():
     print(databaseList)
     print('\n')
 
+# TODO
 '''
     Función Actualizar - Update : Función del controlador.
 '''
@@ -111,3 +112,5 @@ def actualizar_user():
 def eliminar_user():
     id = int(input('Por favor, escriba el id del usuario que busca: '))
     return delete_user(id)
+
+# Desarrollado por Alexi Durán Gómez : C.C-1.067.031.983

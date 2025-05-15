@@ -18,7 +18,7 @@ def read_user(id:int):
             return databaseList[i]
         else:
             print('User no encontrado. \n')
-
+# TODO
 # Función Actualizar - Update
 def update_user(id, data: dict):
     user = read_user(id)
@@ -31,7 +31,10 @@ def update_user(id, data: dict):
 
         modified = input('Elija una opción a modificar')
 
-
+# TODO
 # Función Eliminar - Delet
 def delete_user():
     pass
+
+
+# Desarrollado por Alexi Durán Gómez : C.C-1.067.031.983
