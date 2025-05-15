@@ -13,28 +13,31 @@ def create_user(user:dict):
 
 # Función Leer - Read
 def read_user(id:int):
-    for i in range(len(databaseList)):
-        if id == databaseList[i]['id']:
-            return databaseList[i]
+    for i, user in enumerate(databaseList):
+        if user['id'] == id:
+            return user
         else:
             print('User no encontrado. \n')
 # TODO
 # Función Actualizar - Update
 def update_user(id, data: dict):
-    user = read_user(id)
-    if user:
-        print('1. para modificar el usuario')
-        print(f'\t nombre: {user["nombre"]}')
-        print(f'\t apellido: {user["apellido"]}')
-        print(f'\t edad: {user["edad"]} \n')
-        print('1. para modificar el telefono del usuario')
+    for i, user in enumerate(databaseList):
+        if user["id"] == id:
+            # Actualizar solo los campos que se encuentran en 'data'
+            for key in data:
+                user[key] = data[key]
+            databaseList[i] = user  # Aplicar la actualización
+            return True
+    print("Usuario no encontrado para actualizar.")
+    return False
 
-        modified = input('Elija una opción a modificar')
 
 # TODO
 # Función Eliminar - Delet
-def delete_user():
-    pass
+def delete_user(id: int):
+    for i, user in range(len(databaseList)):
+        if user['id'] == id:
+            deleted = databaseList[i].remove(id)
 
 
 # Desarrollado por Alexi Durán Gómez : C.C-1.067.031.983

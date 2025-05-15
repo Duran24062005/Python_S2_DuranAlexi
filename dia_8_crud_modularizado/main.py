@@ -36,8 +36,9 @@ if __name__ == '__main__':
 
         elif (opcionUsuario == 6):
             print("\n#######################################")
-            print("#### Saliendo Librería de personas ####")
-            print("#######################################")
+            print("## Gracias por utilizar el software ###")
+            print("##### Librería de personas ############")
+            print("#######################################\n")
             print(' ')
             program = False
 
