@@ -1,1 +1,12 @@
-{"nombres": ["Ana", "Eliza"], "edades": [20, 31]}
+{
+    "nombres": 
+    [
+        "Ana",
+        "Eliza"
+    ],
+    "edades": 
+    [
+        20,
+        31
+    ]
+}
